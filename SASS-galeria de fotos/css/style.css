@@ -1,0 +1,241 @@
+@charset "UTF-8";
+/*criando dados pre programados*/
+/*resert da página*/
+* {
+  font-family: "josefin-sans";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #777;
+}
+body a {
+  color: #777;
+  text-decoration: none;
+  transition: 0.4s;
+}
+body ul {
+  list-style: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+}
+.header-brand {
+  color: red;
+  font-size: 3rem;
+}
+.header-navbar ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-navbar li {
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.header-navbar li .active {
+  color: #20c997;
+}
+.header-navbar li a:hover {
+  color: #20c997;
+}
+.header-social-media ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.header-social-media ul li {
+  margin: 0 1rem;
+  font-size: 20px;
+}
+.header-social-media ul li a:hover {
+  color: #fff;
+}
+
+.galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1170px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+}
+.galeria-card {
+  width: 31%;
+  height: 250px;
+  margin-bottom: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.galeria-card-title {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.galeria-card-btn {
+  padding: 0.6rem 3rem;
+  border: 1px solid red;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.galeria-card-btn:hover {
+  background-color: #fff;
+  color: red;
+  background-color: #000;
+}
+
+#card-1 {
+  background-image: url("../img/cachorro.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#card-1:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cachorro.jpg");
+}
+
+#card-2 {
+  background-image: url("../img/color.jfif");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#card-2:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/color.jfif");
+}
+
+#card-3 {
+  background-image: url("../img/cuiaba.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#card-3:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/cuiaba.jpg");
+}
+
+#card-4 {
+  background-image: url("../img/decoracao.jfif");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#card-4:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/decoracao.jfif");
+}
+
+#card-5 {
+  background-image: url("../img/esporte.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#card-5:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/esporte.png");
+}
+
+#card-6 {
+  background-image: url("../img/natureza.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#card-6:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/natureza.jpg");
+}
+
+#card-7 {
+  background-image: url("../img/paissagem.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#card-7:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/paissagem.jpg");
+}
+
+#card-8 {
+  background-image: url("../img/pessoas.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#card-8:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pessoas.jpg");
+}
+
+#card-9 {
+  background-image: url("../img/refeicoes.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(100%);
+  transition: 0.6s;
+}
+#card-9:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/refeicoes.jpg");
+}
+
+footer {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+footer span {
+  font-weight: bold;
+  color: #20c997;
+}
+
+/*# sourceMappingURL=style.css.map */

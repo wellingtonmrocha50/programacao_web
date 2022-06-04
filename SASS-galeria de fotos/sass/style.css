@@ -1,0 +1,18 @@
+/* Error: expected newline.
+ *    ,
+ * 24 |         background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../img/#{$img}'))
+ *    |                                                                                                  ^
+ *    '
+ *   sass\_mixins.sass 24:98  @use
+ *   sass\style.sass 2:1      root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: expected newline.\a    \2577 \a 24 \2502          background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url('../img/#{$img}'))\d\a    \2502                                                                                                   ^\a    \2575 \a   sass\\_mixins.sass 24:98  @use\a   sass\\style.sass 2:1      root stylesheet";
+}
